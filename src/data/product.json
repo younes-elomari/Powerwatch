@@ -1,0 +1,30 @@
+{
+  "name": "Chronomat 44 GMT",
+  "brand": "Breitling",
+  "price": "899",
+  "discount": "15",
+  "props": ["Sapphire crystal", "Unidirectional rotating bazel"],
+  "description": "Robust 44mm stainless steel watch with sapphire crystal, automatic movement, multi-time zone tracking, and is water-resistant up to 200 meters.",
+  "details": [
+    {
+      "title": "Material",
+      "text": "Typically made from stainless steel, with options for 18k rose gold accents, giving it a high-end finish."
+    },
+    {
+      "title": "Power Reserve",
+      "text": "Around 70 hours, meaning it can run for more than two days without needing to be wound."
+    },
+    {
+      "title": "GMT Hand",
+      "text": "A fourth hand, often in a contrasting color (such as red), is used for the GMT function."
+    },
+    {
+      "title": "Sapphire Crystal",
+      "text": "Scratch-resistant and coated for anti-reflective properties, ensuring clear visibility under various lighting conditions."
+    },
+    {
+      "title": "Sporty Yet Elegant",
+      "text": "The watch strikes a balance between professional/aviator style and high-end luxury."
+    }
+  ]
+}

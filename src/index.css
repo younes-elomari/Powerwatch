@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerImd {
+  max-height: 400px;
+}
+
+.headerBg {
+  background: linear-gradient(to right, #495969, #1d2329);
+}
+
+.whiteSmokeBg {
+  background-color: #ededed;
+}
+
+.blackBg {
+  background: #171e24;
+}
+
+.bgBrown {
+  background-color: #b5b0a0;
+}
+
+.darkBrownBg {
+  background-color: #794032;
+}
+
+.primaryButton {
+  padding: 8px 45px 8px 45px;
+  border: 1px solid #4d5d53;
+  color: #4d5d53;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.primaryButton:hover {
+  color: #b2beb5;
+  background-color: #4d5d53;
+  transition: ease-in-out 0.2s;
+}
+
+.HeaderMainHeading {
+  font-size: 180px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #4d5d53;
+}
+
+.HeaderMainHeadingSmall {
+  font-size: 110px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #4d5d53;
+  padding-left: 15px;
+  border-left: 1px solid rgba(77, 93, 83, 0.5);
+}
+
+.bgProductDetailsTitle {
+  text-transform: uppercase;
+  position: absolute;
+  top: -140px;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 260px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.bgCollectionTitle {
+  text-transform: uppercase;
+  position: absolute;
+  top: -80px;
+  color: rgba(255, 255, 255, 0.05);
+  font-size: 240px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.fadeInAnimation {
+  opacity: 0;
+  animation: fadeIn 1.2s 1s forwards;
+}
+
+.scale {
+  animation: scaleAnimation 1s forwards;
+}
+
+.resetScale {
+  animation: ResetScaleAnimation 1s forwards;
+}
+
+.appearFromLeft {
+  opacity: 0;
+  animation: leftAppear 1s 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leftAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scaleAnimation {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+
+@keyframes ResetScaleAnimation {
+  from {
+    scale: 1.1;
+  }
+  to {
+    scale: 1;
+  }
+}
